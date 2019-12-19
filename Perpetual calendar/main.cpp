@@ -12,8 +12,7 @@ public:
         printf("欢迎使用！\n\n");
     };
 
-    void Get_time(); //获取时间
-
+    void Get_time();   //获取时间
     void Total_days(); //计算总天数
 
     void Week_days(); //计算所查询月份的第一天是星期几
@@ -38,12 +37,9 @@ private:
 void Calendar::Get_time() //获取时间
 {
     printf("请输入您要查询的年份和月份\n");
-    printf("         年    月\n");
-    system("tput cup 3 4");
     scanf("%d", &Year);
-    system("tput cup 3 12");
     scanf("%d", &Month);
-    printf("\n");
+    cout << endl;
 }
 
 void Calendar::Total_days() //计算总天数
@@ -120,9 +116,7 @@ void Calendar::print() //打印日历
     Week_days();
     Month_days();
     int i;
-
     printf(" 日 一 二 三 四 五 六\n");
-
     for (i = 0; i < WeekDays; i++)
     {
         printf("   ");
@@ -137,7 +131,7 @@ void Calendar::print() //打印日历
         }
         printf("%3d", i);
     }
-    printf("\n\n");
+    cout << endl;
 }
 
 int main()
@@ -146,6 +140,5 @@ int main()
     Calendar cal;
     cal.Get_time();
     cal.print();
-
     return 0;
 }
