@@ -4,7 +4,7 @@ using namespace std;
 class Calendar
 {
 public:
-    Calendar() //构造函数
+    Calendar()
     {
         TotalDays = 0;
         MonthDays = 0;
