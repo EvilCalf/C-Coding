@@ -4,28 +4,21 @@ using namespace std;
 class Calendar
 {
 public:
-    Calendar() //构造函数
+    Calendar()
     {
         TotalDays = 0;
         MonthDays = 0;
         system("clear");
-        printf("欢迎使用！\n\n");
     };
 
-    void Get_time();   //获取时间
-    void Total_days(); //计算总天数
+    void Get_time();
+    void Total_days();
 
-    void Week_days(); //计算所查询月份的第一天是星期几
+    void Week_days();
 
-    void Month_days(); //计算所查询月份的总天数
+    void Month_days();
 
-    void print(); //打印日历
-
-    ~Calendar() //析构函数
-    {
-        printf("感谢您的使用！\n");
-    };
-
+    void print();
 private:
     int Year;
     int Month;
