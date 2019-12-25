@@ -1,5 +1,5 @@
-#include <iostream>
 #include <ctime>
+#include <iostream>
 using namespace std;
 
 class Tree
