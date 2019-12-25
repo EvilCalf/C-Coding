@@ -65,11 +65,6 @@ yarn-error.log*
 # python
 __pycache__
 
-# picture
-*.png
-*.jpg
-*.gif
-
 # VSC Counter
 /.VSCodeCounter/
 
