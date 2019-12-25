@@ -19,6 +19,7 @@ public:
     void Month_days();
 
     void print();
+
 private:
     int Year;
     int Month;
