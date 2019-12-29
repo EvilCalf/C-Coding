@@ -4,7 +4,7 @@ using namespace std;
 class MyQueue
 {
 protected:
-    int date[999999];
+    int date[99999];
     int head = 0;
     int tail = 0;
 
@@ -22,7 +22,7 @@ public:
     }
     int size()
     {
-        return head - tail;
+        return tail - head;
     }
 };
 
@@ -46,7 +46,7 @@ int main()
             if (q.size() == 0)
                 cout << "Invalid" << endl;
             else
-                q.pop();
+                cout << q.pop() << endl;
             break;
         case 3:
             cout << q.size() << endl;
